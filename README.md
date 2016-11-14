@@ -10,20 +10,22 @@ Slides can be found here: http://www.slideshare.net/vanhuyz/tensorflowline-botaw
 
 # Installation
 
-* Install MeCab
+## Install MeCab
 
 ```bash
 # Ubuntu 14.04:
 $ sudo apt-get install -y mecab mecab-ipadic-utf8 libmecab-dev
 ```
 
-* (Optional) Install mecab-ipadic-neologd dictionary
+## (Optional) Install mecab-ipadic-neologd dictionary
 See https://github.com/neologd/mecab-ipadic-neologd for more detailed information.
 After installing mecab-ipadic-neologd, you need to set it as system dictionary.
 
-* Install pip if it is not already installed
 
-* Install requirements
+## Install requirements
+
+* Install pip if it is not already installed
+* Run install
 
 ```bash
 $ pip install -r requirements.txt
