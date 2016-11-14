@@ -51,7 +51,7 @@ $ make sequence
 $ make dict
 ```
 
-# Training
+## Training
 
 * Configure hyperparameters in app/common/settings.py if needed
 
