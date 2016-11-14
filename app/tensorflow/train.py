@@ -86,7 +86,7 @@ def train():
               
       if step % 10000 == 0:
         # Save the variables to disk.
-        save_path = saver.save(sess, "app/checkpoints/" + settings.CKPT_NAME)
+        save_path = saver.save(sess, "checkpoints/" + settings.CKPT_NAME)
         print("Model saved in file: %s" % save_path)
 
 if __name__ == '__main__':
