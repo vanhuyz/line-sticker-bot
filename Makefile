@@ -1,5 +1,7 @@
 # Install requirements
 init:
+	mkdir -p checkpoints
+	mkdir -p tensorboard
 	pip install -r requirements.txt
 
 # Get tweets through Streaming API

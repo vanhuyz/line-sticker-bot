@@ -25,11 +25,9 @@ See https://github.com/neologd/mecab-ipadic-neologd for more detailed informatio
 ## Install requirements
 
 * Install pip if it is not already installed
-* Run install
+* Run init scipt
 
 ```bash
-$ pip install -r requirements.txt
-# or
 $ make init
 ```
 
