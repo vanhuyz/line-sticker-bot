@@ -8,11 +8,11 @@ stream:
 
 # Clean tweets then save as Sequence
 sequence:
-	python -m app.twitter.clean_tweet
+	python -m app.twitter.tweet_cleaner
 
 # Build dictionaries
 dict:
-	python -m app.tensorflow.build_dictionaries
+	python -m app.tensorflow.dictionary_builder
 
 # Train RNN (without Docker)
 train:
