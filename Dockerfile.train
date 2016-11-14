@@ -1,0 +1,7 @@
+FROM vanhuy/tensorflow-mecab:ipa
+
+COPY . /tmp/linebot
+WORKDIR /tmp/linebot
+RUN make init
+
+ENTRYPOINT ["make", "train"]

@@ -1,0 +1,30 @@
+version: '2'
+services:
+  train:
+    build:
+      context: .
+      dockerfile: Dockerfile.train
+    devices: # for nvidia-docker
+      - "/dev/nvidiactl:/dev/nvidiactl"
+      - "/dev/nvidia-uvm:/dev/nvidia-uvm"
+      - "/dev/nvidia-uvm-tools:/dev/nvidia-uvm-tools"
+      - "/dev/nvidia0:/dev/nvidia0"
+    volumes:
+      - /mnt/data2/checkpoints/vanhuyz/linebot:/tmp/linebot/app/checkpoints:rw # to save checkpoints
+      - /tmp/linebot/tensorboard # for tensorboard
+      - nvidia_driver:/usr/local/nvidia:ro # for nvidia-docker
+    tty: true
+  tensorboard:
+    depends_on:
+      - train
+    image: tensorboard
+    ports:
+      - "6006:6006"
+    volumes_from:
+      - train:ro
+    environment:
+      - LOGDIR=/tmp/linebot/tensorboard
+volumes:
+  nvidia_driver:
+    external:
+      name: nvidia_driver_367.57 # for nvidia-docker

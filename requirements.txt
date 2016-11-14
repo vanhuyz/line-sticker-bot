@@ -1,0 +1,4 @@
+flask_sqlalchemy
+tweepy
+mecab-python3
+line-bot-sdk

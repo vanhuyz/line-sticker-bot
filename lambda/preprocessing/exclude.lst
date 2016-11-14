@@ -1,0 +1,13 @@
+*.dist-info/*
+*.egg-info
+*.pyc
+env/*
+*~
+exclude.lst
+preprocessing.zip
+lib/*
+local/bin/*
+local/include/*
+local/libexec/*
+local/share/*
+local/lib/mecab/dic/*
