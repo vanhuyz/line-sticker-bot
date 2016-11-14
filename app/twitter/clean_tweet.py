@@ -33,8 +33,7 @@ def create_sequence(line, tweet):
         db.session.add(seq)
         db.session.commit()
 
-# last tweet id = 226832
-for tweet in Tweet.query.offset(226832).all():
+for tweet in Tweet.query.all():
   print(tweet.id)
   lines = tweet.content.encode('utf-8').splitlines()
   for line in lines:
