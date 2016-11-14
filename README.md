@@ -1,5 +1,5 @@
 # About
-A simple LINE bot that automatically reply a sticker according to the message content. <br />
+A simple LINE bot that automatically replies a sticker according to the message content. <br />
 This is the source code of my presentation's demo at [【AWS×BOT】TechTalk #3](http://lig.connpass.com/event/41826/). <br />
 Slides can be found at http://www.slideshare.net/vanhuyz/tensorflowline-botaws-lambda (Japanese)
 
